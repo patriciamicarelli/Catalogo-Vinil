@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Disco</title>
+    <link rel="icon" href="./vinilAba.png">
+     
+    <link rel="stylesheet" href="./css/main.css"
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+
+</head>
+
+<body>
+    <header>  <div>
+        <img src="./vinil1.png"  alt="img Discos"  width="90%" height="auto"/> 
+    </div></header>
+  
+
+    <section class="container">
+        <h1 id="titulo">Catálogo de Discos de Vinil</h1>
+
+        <div class="">
+            <label for="artista" class="label-input">
+                <strong>Nome do Artista:</strong> 
+                <input type="text" id="artista" name="Nome do Artista" required>
+            </label>
+            <br>
+            <label for="album" class="label-input">
+                <strong>Nome do Álbum:</strong> 
+                <input type="text" id="album" name="Nome do Álbum" required>
+            </label>
+            <br>
+            <label for="ano" class="label-input">
+                <strong>Ano de Lançamento:</strong>
+                <input type="number" id="ano" nome="Ano" required>
+            </label>
+            <br>
+            <label for="quantidade" class="label-input">
+                <strong>Quantidade:</strong>
+                <input type="number" id="quantidade" nome=" Quantidade" required>
+            </label>
+
+            <br>
+            <button type="button" class="btn-adicionar background-preto"
+            onclick="salvar()">Adicionar</button>
+
+            <button type="button" id="btn-editar" style="display: none;"><b>Editar</b></button>
+          </div>
+
+
+        <div class="margem-interna">
+          <table class="centro tabela body">
+              <thead>
+              <tr>
+                  <th>Artista</th>
+                  <th>Álbum</th>
+                  <th>Ano</th>
+                  <th>Qt</th>
+              </tr>
+              </thead>
+              <tbody id="table-body">
+  
+              </tbody>
+
+              <tfoot id="table-footer">
+              <tr>
+                  <td>Total </td>
+                  <td>de</td>
+                  <td>discos:</td>
+                  <td> <span id="quantidade-total"></span> </td>
+                  <td></td>
+              </tr>
+              </tfoot>
+          </table>
+      </div>  
+    </section>
+    <footer>
+        <p>Seu Disco ltda.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
